@@ -5,7 +5,7 @@
 
 # Introduction
 This repo contains a collection of functions useful to perform blackbox optimization.
-**Currently** the functions are take from the following resources:
+**Currently** the functions are taken from the following resources:
 - [Surjanovic and Bingham Optimization Test Problems](https://www.sfu.ca/~ssurjano/optimization.html)
 - [Black Box Optimization Competition](https://www.ini.rub.de/PEOPLE/glasmtbl/projects/bbcomp/)
 
