@@ -1,284 +1,463 @@
 {
     "ackley_function": {
         "dimension": "d",
-        "filename": "functions_parameters/ackley_function.m",
-        "minimum_x" : 0,
-        "minimum_f" : 0
+        "filepath": "functions_parameters/ackley_function.m",
+        "minimum_x": 0,
+        "minimum_f": 0,
+        "parameters": true
     },
     "bukin_function_n._6": {
         "dimension": "2",
-        "filename": "functions_no_parameters/bukin_function_n._6.m",
-        "minimum_x" : [ [-10,1] ],
-        "minimum_f" : 0
+        "filepath": "functions_no_parameters/bukin_function_n._6.m",
+        "minimum_x": [
+            [
+                -10,
+                1
+            ]
+        ],
+        "minimum_f": 0,
+        "parameters": false
     },
     "cross-in-tray_function": {
         "dimension": "2",
-        "filename": "functions_no_parameters/cross-in-tray_function.m",
-        "minimum_x" : [ [1.3491,-13491], [1.3491,1.3491], [-1.3491,1.3491], [-1.3491,-1.3491] ],
-        "minimum_f" : -2.06261
+        "filepath": "functions_no_parameters/cross-in-tray_function.m",
+        "minimum_x": [
+            [
+                1.3491,
+                -13491
+            ],
+            [
+                1.3491,
+                1.3491
+            ],
+            [
+                -1.3491,
+                1.3491
+            ],
+            [
+                -1.3491,
+                -1.3491
+            ]
+        ],
+        "minimum_f": -2.06261,
+        "parameters": false
     },
     "drop-wave_function": {
         "dimension": "2",
-        "filename": "functions_no_parameters/drop-wave_function.m",
-        "minimum_x" : [ [0,0] ],
-        "minimum_f" : -1
+        "filepath": "functions_no_parameters/drop-wave_function.m",
+        "minimum_x": [
+            [
+                0,
+                0
+            ]
+        ],
+        "minimum_f": -1,
+        "parameters": false
     },
     "eggholder_function": {
         "dimension": "2",
-        "filename": "functions_no_parameters/eggholder_function.m",
-        "minimum_x" : [ [512,404.2319] ],
-        "minimum_f" : -959.6407
+        "filepath": "functions_no_parameters/eggholder_function.m",
+        "minimum_x": [
+            [
+                512,
+                404.2319
+            ]
+        ],
+        "minimum_f": -959.6407,
+        "parameters": false
     },
     "gramacy_&_lee_(2012)_function": {
         "dimension": "1",
-        "filename": "functions_no_parameters/gramacy_&_lee_(2012)_function.m",
-        "minimum_x" : null,
-        "minimum_f" : null
+        "filepath": "functions_no_parameters/gramacy_&_lee_(2012)_function.m",
+        "minimum_x": null,
+        "minimum_f": null,
+        "parameters": false
     },
     "griewank_function": {
         "dimension": "d",
-        "filename": "functions_no_parameters/griewank_function.m",
-        "minimum_x" : 0,
-        "minimum_f" : 0
+        "filepath": "functions_no_parameters/griewank_function.m",
+        "minimum_x": 0,
+        "minimum_f": 0,
+        "parameters": false
     },
     "holder_table_function": {
         "dimension": "2",
-        "filename": "functions_no_parameters/holder_table_function.m",
-        "minimum_x" : [ [8.05502,9.66459], [8.05502,-9.66459], [-8.05502,9.66459], [-8.05502,-9.66459] ],
-        "minimum_f" : -19.2085
+        "filepath": "functions_no_parameters/holder_table_function.m",
+        "minimum_x": [
+            [
+                8.05502,
+                9.66459
+            ],
+            [
+                8.05502,
+                -9.66459
+            ],
+            [
+                -8.05502,
+                9.66459
+            ],
+            [
+                -8.05502,
+                -9.66459
+            ]
+        ],
+        "minimum_f": -19.2085,
+        "parameters": false
     },
     "langermann_function": {
         "dimension": "d",
-        "filename": "functions_parameters/langermann_function.m",
-        "minimum_x" : null,
-        "minimum_f" : null
+        "filepath": "functions_parameters/langermann_function.m",
+        "minimum_x": null,
+        "minimum_f": null,
+        "parameters": true
     },
     "levy_function": {
         "dimension": "d",
-        "filename": "functions_no_parameters/levy_function.m",
-        "minimum_x" : 1,
-        "minimum_f" : 0
+        "filepath": "functions_no_parameters/levy_function.m",
+        "minimum_x": 1,
+        "minimum_f": 0,
+        "parameters": false
     },
     "levy_function_n._13": {
         "dimension": "2",
-        "filename": "functions_no_parameters/levy_function_n._13.m",
-        "minimum_x" : [ [1,1] ],
-        "minimum_f" : 0
+        "filepath": "functions_no_parameters/levy_function_n._13.m",
+        "minimum_x": [
+            [
+                1,
+                1
+            ]
+        ],
+        "minimum_f": 0,
+        "parameters": false
     },
     "rastrigin_function": {
         "dimension": "d",
-        "filename": "functions_no_parameters/rastrigin_function.m",
-        "minimum_x" : 0,
-        "minimum_f" : 0
+        "filepath": "functions_no_parameters/rastrigin_function.m",
+        "minimum_x": 0,
+        "minimum_f": 0,
+        "parameters": false
     },
     "schaffer_function_n._2": {
         "dimension": "2",
-        "filename": "functions_no_parameters/schaffer_function_n._2.m",
-        "minimum_x" : [ [0,0] ],
-        "minimum_f" : 0
+        "filepath": "functions_no_parameters/schaffer_function_n._2.m",
+        "minimum_x": [
+            [
+                0,
+                0
+            ]
+        ],
+        "minimum_f": 0,
+        "parameters": false
     },
     "schaffer_function_n._4": {
         "dimension": "2",
-        "filename": "functions_no_parameters/schaffer_function_n._4.m",
-        "minimum_x" : null,
-        "minimum_f" : null
+        "filepath": "functions_no_parameters/schaffer_function_n._4.m",
+        "minimum_x": null,
+        "minimum_f": null,
+        "parameters": false
     },
     "schwefel_function": {
         "dimension": "d",
-        "filename": "functions_no_parameters/schwefel_function.m",
-        "minimum_x" : 420.9687,
-        "minimum_f" : 0
+        "filepath": "functions_no_parameters/schwefel_function.m",
+        "minimum_x": 420.9687,
+        "minimum_f": 0,
+        "parameters": false
     },
     "shubert_function": {
         "dimension": "2",
-        "filename": "functions_no_parameters/shubert_function.m",
-        "minimum_x" : null,
-        "minimum_f" : -186.7309
+        "filepath": "functions_no_parameters/shubert_function.m",
+        "minimum_x": null,
+        "minimum_f": -186.7309,
+        "parameters": false
     },
     "bohachevsky_functions": {
         "dimension": "2",
-        "filename": "functions_no_parameters/bohachevsky_functions.m",
-        "minimum_x" : [ [0,0] ],
-        "minimum_f" : 0
+        "filepath": "functions_no_parameters/bohachevsky_functions.m",
+        "minimum_x": [
+            [
+                0,
+                0
+            ]
+        ],
+        "minimum_f": 0,
+        "parameters": false
     },
     "perm_function_0,_d,_B": {
         "dimension": "d",
-        "filename": "functions_parameters/perm_function_0,_d,_B.m",
-        "minimum_x" : "1, 1/2, ..., 1/d",
-        "minimum_f" : 0
+        "filepath": "functions_parameters/perm_function_0,_d,_B.m",
+        "minimum_x": "1, 1/2, ..., 1/d",
+        "minimum_f": 0,
+        "parameters": true
     },
     "rotated_hyper-ellipsoid_function": {
         "dimension": "d",
-        "filename": "functions_no_parameters/rotated_hyper-ellipsoid_function.m",
-        "minimum_x" : 0,
-        "minimum_f" : 0
+        "filepath": "functions_no_parameters/rotated_hyper-ellipsoid_function.m",
+        "minimum_x": 0,
+        "minimum_f": 0,
+        "parameters": false
     },
     "sphere_function": {
         "dimension": "d",
-        "filename": "functions_no_parameters/sphere_function.m",
-        "minimum_x" : 0,
-        "minimum_f" : 0
+        "filepath": "functions_no_parameters/sphere_function.m",
+        "minimum_x": 0,
+        "minimum_f": 0,
+        "parameters": false
     },
     "sum_of_different_powers_function": {
         "dimension": "d",
-        "filename": "functions_no_parameters/sum_of_different_powers_function.m",
-        "minimum_x" : 0,
-        "minimum_f" : 0
+        "filepath": "functions_no_parameters/sum_of_different_powers_function.m",
+        "minimum_x": 0,
+        "minimum_f": 0,
+        "parameters": false
     },
     "sum_squares_function": {
         "dimension": "d",
-        "filename": "functions_no_parameters/sum_squares_function.m",
-        "minimum_x" : 0,
-        "minimum_f" : 0
+        "filepath": "functions_no_parameters/sum_squares_function.m",
+        "minimum_x": 0,
+        "minimum_f": 0,
+        "parameters": false
     },
     "trid_function": {
         "dimension": "d",
-        "filename": "functions_no_parameters/trid_function.m",
-        "minimum_x" : "x_i = i(d + 1 - i), for all i = 1,2,...,d",
-        "minimum_f" : "-d(d + 4)(d - 1)/6"
+        "filepath": "functions_no_parameters/trid_function.m",
+        "minimum_x": "x_i = i(d + 1 - i), for all i = 1,2,...,d",
+        "minimum_f": "-d(d + 4)(d - 1)/6",
+        "parameters": false
     },
     "booth_function": {
         "dimension": "2",
-        "filename": "functions_no_parameters/booth_function.m",
-        "minimum_x" : [ [1,3] ],
-        "minimum_f" : 0
+        "filepath": "functions_no_parameters/booth_function.m",
+        "minimum_x": [
+            [
+                1,
+                3
+            ]
+        ],
+        "minimum_f": 0,
+        "parameters": false
     },
     "matyas_function": {
         "dimension": "2",
-        "filename": "functions_no_parameters/matyas_function.m",
-        "minimum_x" : [ [0,0] ],
-        "minimum_f" : 0
+        "filepath": "functions_no_parameters/matyas_function.m",
+        "minimum_x": [
+            [
+                0,
+                0
+            ]
+        ],
+        "minimum_f": 0,
+        "parameters": false
     },
     "mccormick_function": {
         "dimension": "2",
-        "filename": "functions_no_parameters/mccormick_function.m",
-        "minimum_x" : [ [-0.54719, -1.54719] ],
-        "minimum_f" : -1.9133
+        "filepath": "functions_no_parameters/mccormick_function.m",
+        "minimum_x": [
+            [
+                -0.54719,
+                -1.54719
+            ]
+        ],
+        "minimum_f": -1.9133,
+        "parameters": false
     },
     "power_sum_function": {
         "dimension": "d",
-        "filename": "functions_parameters/power_sum_function.m",
-        "minimum_x" : null,
-        "minimum_f" : null
+        "filepath": "functions_parameters/power_sum_function.m",
+        "minimum_x": null,
+        "minimum_f": null,
+        "parameters": true
     },
     "zakharov_function": {
         "dimension": "d",
-        "filename": "functions_no_parameters/zakharov_function.m",
-        "minimum_x" : 0,
-        "minimum_f" : 0
+        "filepath": "functions_no_parameters/zakharov_function.m",
+        "minimum_x": 0,
+        "minimum_f": 0,
+        "parameters": false
     },
     "three-hump_camel_function": {
         "dimension": "2",
-        "filename": "functions_no_parameters/three-hump_camel_function.m",
-        "minimum_x" : [ [0,0] ],
-        "minimum_f" : 0
+        "filepath": "functions_no_parameters/three-hump_camel_function.m",
+        "minimum_x": [
+            [
+                0,
+                0
+            ]
+        ],
+        "minimum_f": 0,
+        "parameters": false
     },
     "six-hump_camel_function": {
         "dimension": "2",
-        "filename": "functions_no_parameters/six-hump_camel_function.m",
-        "minimum_x" : [ [0.0898, -0.7126], [-0.0898, 0.7126] ],
-        "minimum_f" : -1.0316
+        "filepath": "functions_no_parameters/six-hump_camel_function.m",
+        "minimum_x": [
+            [
+                0.0898,
+                -0.7126
+            ],
+            [
+                -0.0898,
+                0.7126
+            ]
+        ],
+        "minimum_f": -1.0316,
+        "parameters": false
     },
     "dixon-price_function": {
         "dimension": "d",
-        "filename": "functions_no_parameters/dixon-price_function.m",
-        "minimum_x" : "x_i = 2^{(2^i - 2)/2^i}, for i=1,...,d",
-        "minimum_f" : 0
+        "filepath": "functions_no_parameters/dixon-price_function.m",
+        "minimum_x": "x_i = 2^{(2^i - 2)/2^i}, for i=1,...,d",
+        "minimum_f": 0,
+        "parameters": false
     },
     "rosenbrock_function": {
         "dimension": "d",
-        "filename": "functions_no_parameters/rosenbrock_function.m",
-        "minimum_x" : 1,
-        "minimum_f" : 0
+        "filepath": "functions_no_parameters/rosenbrock_function.m",
+        "minimum_x": 1,
+        "minimum_f": 0,
+        "parameters": false
     },
     "de_jong_function_n._5": {
         "dimension": "2",
-        "filename": "functions_no_parameters/de_jong_function_n._5.m",
-        "minimum_x" : null,
-        "minimum_f" : null
+        "filepath": "functions_no_parameters/de_jong_function_n._5.m",
+        "minimum_x": null,
+        "minimum_f": null,
+        "parameters": false
     },
     "easom_function": {
         "dimension": "2",
-        "filename": "functions_no_parameters/easom_function.m",
-        "minimum_x" : "pi,pi",
-        "minimum_f" : -1
+        "filepath": "functions_no_parameters/easom_function.m",
+        "minimum_x": "pi,pi",
+        "minimum_f": -1,
+        "parameters": false
     },
     "michalewicz_function": {
         "dimension": "d",
-        "filename": "functions_parameters/michalewicz_function.m",
-        "minimum_x" : "d=2 x = (2.20, 1.57)",
-        "minimum_f" : "d=2 f = -1.8013\nd=5 f = -4.687658\nd=10 f = -9.66015"
+        "filepath": "functions_parameters/michalewicz_function.m",
+        "minimum_x": "d=2 x = (2.20, 1.57)",
+        "minimum_f": "d=2 f = -1.8013\nd=5 f = -4.687658\nd=10 f = -9.66015",
+        "parameters": true
     },
     "beale_function": {
         "dimension": "2",
-        "filename": "functions_no_parameters/beale_function.m",
-        "minimum_x" : [ [3,0.5] ],
-        "minimum_f" : 0
+        "filepath": "functions_no_parameters/beale_function.m",
+        "minimum_x": [
+            [
+                3,
+                0.5
+            ]
+        ],
+        "minimum_f": 0,
+        "parameters": false
     },
     "branin_function": {
         "dimension": "2",
-        "filename": "functions_parameters/branin_function.m",
-        "minimum_x" : "[ [-pi,12.275], [pi,2.275], [9.42478,2.475] ]",
-        "minimum_f" : 0.397887
+        "filepath": "functions_parameters/branin_function.m",
+        "minimum_x": "[ [-pi,12.275], [pi,2.275], [9.42478,2.475] ]",
+        "minimum_f": 0.397887,
+        "parameters": true
     },
     "colville_function": {
         "dimension": "4",
-        "filename": "functions_no_parameters/colville_function.m",
-        "minimum_x" : [ [1,1,1,1] ],
-        "minimum_f" : 0
+        "filepath": "functions_no_parameters/colville_function.m",
+        "minimum_x": [
+            [
+                1,
+                1,
+                1,
+                1
+            ]
+        ],
+        "minimum_f": 0,
+        "parameters": false
     },
     "forrester_et_al._(2008)_function": {
         "dimension": "1",
-        "filename": "functions_no_parameters/forrester_et_al._(2008)_function.m",
-        "minimum_x" : null,
-        "minimum_f" : null
+        "filepath": "functions_no_parameters/forrester_et_al._(2008)_function.m",
+        "minimum_x": null,
+        "minimum_f": null,
+        "parameters": false
     },
     "goldstein-price_function": {
         "dimension": "2",
-        "filename": "functions_no_parameters/goldstein-price_function.m",
-        "minimum_x" : [ [0,-1] ],
-        "minimum_f" : 3
+        "filepath": "functions_no_parameters/goldstein-price_function.m",
+        "minimum_x": [
+            [
+                0,
+                -1
+            ]
+        ],
+        "minimum_f": 3,
+        "parameters": false
     },
     "hartmann_3-d_function": {
         "dimension": "3",
-        "filename": "functions_no_parameters/hartmann_3-d_function.m",
-        "minimum_x" : [ [0.114614,0.555649,0.852547] ],
-        "minimum_f" : -3.86278
+        "filepath": "functions_no_parameters/hartmann_3-d_function.m",
+        "minimum_x": [
+            [
+                0.114614,
+                0.555649,
+                0.852547
+            ]
+        ],
+        "minimum_f": -3.86278,
+        "parameters": false
     },
     "hartmann_4-d_function": {
         "dimension": "4",
-        "filename": "functions_no_parameters/hartmann_4-d_function.m",
-        "minimum_x" : null,
-        "minimum_f" : null
+        "filepath": "functions_no_parameters/hartmann_4-d_function.m",
+        "minimum_x": null,
+        "minimum_f": null,
+        "parameters": false
     },
     "hartmann_6-d_function": {
         "dimension": "6",
-        "filename": "functions_no_parameters/hartmann_6-d_function.m",
-        "minimum_x" : [ [0.20169,0.150011,0.476874,0.275332,0.311652,0.6573] ],
-        "minimum_f" : -3.32237
+        "filepath": "functions_no_parameters/hartmann_6-d_function.m",
+        "minimum_x": [
+            [
+                0.20169,
+                0.150011,
+                0.476874,
+                0.275332,
+                0.311652,
+                0.6573
+            ]
+        ],
+        "minimum_f": -3.32237,
+        "parameters": false
     },
     "perm_function_d,_B": {
         "dimension": "d",
-        "filename": "functions_parameters/perm_function_d,_B.m",
-        "minimum_x" : "[ [1,2,...,d] ]",
-        "minimum_f" : 0
+        "filepath": "functions_parameters/perm_function_d,_B.m",
+        "minimum_x": "[ [1,2,...,d] ]",
+        "minimum_f": 0,
+        "parameters": true
     },
     "powell_function": {
         "dimension": "d",
-        "filename": "functions_no_parameters/powell_function.m",
-        "minimum_x" : 0,
-        "minimum_f" : 0
+        "filepath": "functions_no_parameters/powell_function.m",
+        "minimum_x": 0,
+        "minimum_f": 0,
+        "parameters": false
     },
     "shekel_function": {
         "dimension": "4",
-        "filename": "functions_no_parameters/shekel_function.m",
-        "minimum_x" : [ [4,4,4,4] ],
-        "minimum_f" : "at m=5, f = -10.1532\nat m=7, f = -10.4029\nat m=10 f = -10.5364"
+        "filepath": "functions_no_parameters/shekel_function.m",
+        "minimum_x": [
+            [
+                4,
+                4,
+                4,
+                4
+            ]
+        ],
+        "minimum_f": "at m=5, f = -10.1532\nat m=7, f = -10.4029\nat m=10 f = -10.5364",
+        "parameters": false
     },
     "styblinski-tang_function": {
         "dimension": "d",
-        "filename": "functions_no_parameters/styblinski-tang_function.m",
-        "minimum_x" : -2.903534,
-        "minimum_f" : "-39.16599d"
+        "filepath": "functions_no_parameters/styblinski-tang_function.m",
+        "minimum_x": -2.903534,
+        "minimum_f": "-39.16599d",
+        "parameters": false
     }
 }
