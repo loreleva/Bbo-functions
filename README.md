@@ -22,6 +22,7 @@ The `sfu/functions.json` file contains all the function names, along with their:
 	- ***Descriptive input***: a string which describes the input (used when the input contains costants or have cases)
 	- ***No global minimum available***: it is a *null* value if the input for the global minimum is unknown
 - Global minimum of the function, which can be a string if the output must be described, a *null* value if it is unknown, or a number
+- Whether the function accepts parameters or not
 
 # Black Box Optimization Competition
 Collection of functions accumulated over five years of the competition. The functions are written in c++ and are computable only by their released software.  
