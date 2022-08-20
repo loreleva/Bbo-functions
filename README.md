@@ -20,7 +20,7 @@ The `sfu/functions.json` file contains all the function names, along with their:
 	- ***Non infinite dimensions***: array which contains the input vector *x*, possibly more than one, to which compute the global minimum
 	- ***Infinite dimensions***: it is a number which stands for a *d* dimensional vector composed by the number repeated
 	- ***Descriptive input***: a string which describes the input (used when the input contains costants or have cases)
-- Global minimum of the function, which can be a string if the output must be described or a number otherwise.
+- Global minimum of the function, which can be a string if the output must be described or a number
 
 # Black Box Optimization Competition
 Collection of functions accumulated over five years of the competition. The functions are written in c++ and are computable only by their released software.  
