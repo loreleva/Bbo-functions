@@ -13,7 +13,7 @@ This repo contains a collection of functions useful to perform blackbox optimiza
 Their project site contains multiple functions to test optimization algorithms.  
 The `sfu` folder groups the functions according to whether they accept parameters or not.  
 The `sfu/functions.json` file contains all the function names, along with their:
-- Dimension (d stands for any dimension size)
+- Dimension (`d` stands for any dimension size)
 - Filename of the MATLAB implementation
 - Filename of the R implementation
 - Input vector for the global minimum, which can take the following values:
