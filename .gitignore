@@ -1,1 +1,3 @@
 *.o
+*.a
+/BBComp/bbcomp_software/example
