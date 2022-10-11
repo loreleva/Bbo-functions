@@ -48,33 +48,10 @@ void optimize()
 	printf("number of used up evaluations: %d\n", evals);
 
 	// allocate memory for a search point
-	double* point = (double*)malloc(dim * sizeof(double));
-	if (point == NULL) { printf("out of memory\n"); return; }
-	double* value = (double*)malloc(obj * sizeof(double));
-	if (value == NULL) { printf("out of memory\n"); return; }
-
-	// run the optimization loop
-	srand(time(NULL));
-	for (int e=0; e<bud; e++)
-	{
-		// define a search point, here uniformly at random
-		for (int d=0; d<dim; d++) point[d] = (rand() + 0.5) / (RAND_MAX + 1.0);
-
-		// query the black box
-		if (evaluate(point, value) == 0) { printf("evaluate failed: %s\n", errorMessage()); return; }
-
-		// In any real algorithm "point" and "value" would update the internals state.
-		// Here we just output the values.
-		printf("[%d] f(%g", e, point[0]);
-		for (int i=1; i<dim; i++) printf(",%g", point[i]);
-		printf(") = %g", value[0]);
-		for (int i=1; i<obj; i++) printf(",%g", value[i]);
-		printf("     intermediate performance: %g", performance());
-		printf("\n");
-	}
-
-	free(point);
-	free(value);
+	//double* point = (double*)malloc(dim * sizeof(double));
+	///if (point == NULL) { printf("out of memory\n"); return; }
+	//double* value = (double*)malloc(obj * sizeof(double));
+	//if (value == NULL) { printf("out of memory\n"); return; }
 
 	// check that we are indeed done
 	evals = evaluations();
