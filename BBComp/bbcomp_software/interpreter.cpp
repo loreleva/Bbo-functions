@@ -1,7 +1,6 @@
 
 #include "interpreter.h"
 #include "parser.h"
-
 #include <sstream>
 #include <stdexcept>
 #include <cmath>

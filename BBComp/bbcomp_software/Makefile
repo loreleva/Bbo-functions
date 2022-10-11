@@ -1,10 +1,12 @@
-#UNCOMMENT AND INSERT BELOW THE NAME OF YOUR MAIN FILE
-#MAIN_FILE = 
-SOURCES = vector.cpp matrix.cpp interpreter.cpp parser.cpp
-OBJECTS = vector.o   matrix.o   interpreter.o   parser.o
 
-test: libbbcomp.a ${MAIN_FILE}
-	$(CXX) -o main ${MAIN_FILE} -L. -lbbcomp
+SOURCES = bbcomplib.cpp problems.cpp rng.cpp json.cpp parser.cpp vector.cpp matrix.cpp paretofront.cpp hypervolume.cpp interpreter.cpp
+OBJECTS = bbcomplib.o   problems.o   rng.o   json.o   parser.o   vector.o   matrix.o   paretofront.o   hypervolume.o   interpreter.o
+
+# CC=gcc
+# CXX=g++
+
+example: libbbcomp.a example.c
+	$(CXX) -o example example.c -L. -lbbcomp
 
 libbbcomp.a: ${OBJECTS}
 	ar rc libbbcomp.a ${OBJECTS}
@@ -16,4 +18,4 @@ libbbcomp.a: ${OBJECTS}
 	$(CXX) -std=c++11 -O3 -DNDEBUG -Wall -fPIC -c $< -o $@
 
 clean:
-	rm -f ${OBJECTS} libbbcomp.a test
+	rm -f ${OBJECTS} libbbcomp.a example
