@@ -3,7 +3,11 @@
         "dimension": "d",
         "minimum_x": 0,
         "minimum_f": 0,
-        "parameters": true,
+        "parameters": [true, ["double a (default = 20)\ndouble b (default = 0.2)\ndouble c (default = 2*\\pi"]],
+        "input_domain": [ 
+            -32.768,
+            32.768
+        ],
         "filepath_r": "functions_parameters/ackley_function.R",
         "filepath_m": "functions_parameters/ackley_function.m"
     },
@@ -16,7 +20,17 @@
             ]
         ],
         "minimum_f": 0,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain":[
+            [
+                -15,
+                -5
+            ],
+            [
+                -3,
+                3
+            ]
+        ],
         "filepath_r": "functions_no_parameters/bukin_function_n._6.R",
         "filepath_m": "functions_no_parameters/bukin_function_n._6.m"
     },
@@ -41,7 +55,13 @@
             ]
         ],
         "minimum_f": -2.06261,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain":[
+            [
+                -10,
+                10
+            ]
+        ],
         "filepath_r": "functions_no_parameters/cross-in-tray_function.R",
         "filepath_m": "functions_no_parameters/cross-in-tray_function.m"
     },
@@ -54,7 +74,13 @@
             ]
         ],
         "minimum_f": -1,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain":[
+            [
+                -5.12,
+                5.12
+            ]
+        ],
         "filepath_r": "functions_no_parameters/drop-wave_function.R",
         "filepath_m": "functions_no_parameters/drop-wave_function.m"
     },
@@ -67,7 +93,13 @@
             ]
         ],
         "minimum_f": -959.6407,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain":[
+            [
+                -512,
+                512
+            ]
+        ],
         "filepath_r": "functions_no_parameters/eggholder_function.R",
         "filepath_m": "functions_no_parameters/eggholder_function.m"
     },
@@ -75,7 +107,13 @@
         "dimension": "1",
         "minimum_x": null,
         "minimum_f": null,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain":[
+            [
+                0.5,
+                2.5
+            ]
+        ],
         "filepath_r": "functions_no_parameters/gramacy_&_lee_(2012)_function.R",
         "filepath_m": "functions_no_parameters/gramacy_&_lee_(2012)_function.m"
     },
@@ -83,7 +121,13 @@
         "dimension": "d",
         "minimum_x": 0,
         "minimum_f": 0,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain":[
+            [
+                -600,
+                600
+            ]
+        ],
         "filepath_r": "functions_no_parameters/griewank_function.R",
         "filepath_m": "functions_no_parameters/griewank_function.m"
     },
@@ -108,7 +152,13 @@
             ]
         ],
         "minimum_f": -19.2085,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain":[
+            [
+                -10,
+                10
+            ]
+        ],
         "filepath_r": "functions_no_parameters/holder_table_function.R",
         "filepath_m": "functions_no_parameters/holder_table_function.m"
     },
@@ -116,7 +166,13 @@
         "dimension": "d",
         "minimum_x": null,
         "minimum_f": null,
-        "parameters": true,
+        "parameters": [true, "The default values are for d=2\ndouble m (default = 5)\nvector[m] c (default = [1,2,5,2,3])\nmatrix[m x d]  A (default = [\n [3,5],\n [5,2],\n [2,1],\n [1,4],\n [7,9]\n])"],
+        "input_domain":[
+            [
+                0,
+                10
+            ]
+        ],
         "filepath_r": "functions_parameters/langermann_function.R",
         "filepath_m": "functions_parameters/langermann_function.m"
     },
@@ -124,7 +180,13 @@
         "dimension": "d",
         "minimum_x": 1,
         "minimum_f": 0,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain":[
+            [
+                -10,
+                10
+            ]
+        ],
         "filepath_r": "functions_no_parameters/levy_function.R",
         "filepath_m": "functions_no_parameters/levy_function.m"
     },
@@ -137,7 +199,13 @@
             ]
         ],
         "minimum_f": 0,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain":[
+            [
+                -10,
+                10
+            ]
+        ],
         "filepath_r": "functions_no_parameters/levy_function_n._13.R",
         "filepath_m": "functions_no_parameters/levy_function_n._13.m"
     },
@@ -145,7 +213,13 @@
         "dimension": "d",
         "minimum_x": 0,
         "minimum_f": 0,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain":[
+            [
+                -5.12,
+                5.12
+            ]  
+        ],
         "filepath_r": "functions_no_parameters/rastrigin_function.R",
         "filepath_m": "functions_no_parameters/rastrigin_function.m"
     },
@@ -158,7 +232,13 @@
             ]
         ],
         "minimum_f": 0,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain":[
+            [
+                -100,
+                100
+            ]  
+        ],
         "filepath_r": "functions_no_parameters/schaffer_function_n._2.R",
         "filepath_m": "functions_no_parameters/schaffer_function_n._2.m"
     },
@@ -166,7 +246,13 @@
         "dimension": "2",
         "minimum_x": null,
         "minimum_f": null,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain": [
+            [
+                -100,
+                100      
+            ]
+        ],
         "filepath_r": "functions_no_parameters/schaffer_function_n._4.R",
         "filepath_m": "functions_no_parameters/schaffer_function_n._4.m"
     },
@@ -174,7 +260,13 @@
         "dimension": "d",
         "minimum_x": 420.9687,
         "minimum_f": 0,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain": [
+            [
+                -500,
+                500
+            ]
+        ],
         "filepath_r": "functions_no_parameters/schwefel_function.R",
         "filepath_m": "functions_no_parameters/schwefel_function.m"
     },
@@ -182,7 +274,13 @@
         "dimension": "2",
         "minimum_x": null,
         "minimum_f": -186.7309,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain": [
+            [
+                -10,
+                10
+            ]
+        ],
         "filepath_r": "functions_no_parameters/shubert_function.R",
         "filepath_m": "functions_no_parameters/shubert_function.m"
     },
@@ -195,15 +293,27 @@
             ]
         ],
         "minimum_f": 0,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain": [
+            [
+                -100,
+                100
+            ]
+        ],
         "filepath_r": "functions_no_parameters/bohachevsky_functions.R",
         "filepath_m": "functions_no_parameters/bohachevsky_functions.m"
     },
     "perm_function_0,_d,_B": {
         "dimension": "d",
-        "minimum_x": "1, 1/2, ..., 1/d",
+        "minimum_x": "minimum_x = [1/(x+1) for x in range(d)]",
         "minimum_f": 0,
-        "parameters": true,
+        "parameters": [true, "double b (default = 10"],
+        "input_domain":
+        [
+            [
+                "(-d, d)"
+            ]
+        ],
         "filepath_r": "functions_parameters/perm_function_0,_d,_B.R",
         "filepath_m": "functions_parameters/perm_function_0,_d,_B.m"
     },
@@ -211,7 +321,13 @@
         "dimension": "d",
         "minimum_x": 0,
         "minimum_f": 0,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain": [
+            [
+                -65.536,
+                65.536
+            ]
+        ],
         "filepath_r": "functions_no_parameters/rotated_hyper-ellipsoid_function.R",
         "filepath_m": "functions_no_parameters/rotated_hyper-ellipsoid_function.m"
     },
@@ -219,7 +335,13 @@
         "dimension": "d",
         "minimum_x": 0,
         "minimum_f": 0,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain": [
+            [
+               -5.12,
+               5.12 
+            ]
+        ],
         "filepath_r": "functions_no_parameters/sphere_function.R",
         "filepath_m": "functions_no_parameters/sphere_function.m"
     },
@@ -227,7 +349,13 @@
         "dimension": "d",
         "minimum_x": 0,
         "minimum_f": 0,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain": [
+            [
+                -1,
+                1
+            ]
+        ],
         "filepath_r": "functions_no_parameters/sum_of_different_powers_function.R",
         "filepath_m": "functions_no_parameters/sum_of_different_powers_function.m"
     },
@@ -235,15 +363,26 @@
         "dimension": "d",
         "minimum_x": 0,
         "minimum_f": 0,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain": [
+            [
+                -10,
+                10
+            ]
+        ],
         "filepath_r": "functions_no_parameters/sum_squares_function.R",
         "filepath_m": "functions_no_parameters/sum_squares_function.m"
     },
     "trid_function": {
         "dimension": "d",
-        "minimum_x": "x_i = i(d + 1 - i), for all i = 1,2,...,d",
-        "minimum_f": "-d(d + 4)(d - 1)/6",
-        "parameters": false,
+        "minimum_x": "minimum_x = [i*(d+1-i) for i in range (1,d+1)]",
+        "minimum_f": "minimum_f = ((-d)*(d + 4)*(d - 1))/6",
+        "parameters": [false],
+        "input_domain": [
+            [
+               "(-d**2, d**2)" 
+            ]
+        ],
         "filepath_r": "functions_no_parameters/trid_function.R",
         "filepath_m": "functions_no_parameters/trid_function.m"
     },
@@ -256,7 +395,13 @@
             ]
         ],
         "minimum_f": 0,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain": [
+            [
+                -10,
+                10
+            ]
+        ],
         "filepath_r": "functions_no_parameters/booth_function.R",
         "filepath_m": "functions_no_parameters/booth_function.m"
     },
@@ -269,7 +414,13 @@
             ]
         ],
         "minimum_f": 0,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain": [
+            [
+                -10,
+                10
+            ]
+        ],
         "filepath_r": "functions_no_parameters/matyas_function.R",
         "filepath_m": "functions_no_parameters/matyas_function.m"
     },
@@ -282,7 +433,17 @@
             ]
         ],
         "minimum_f": -1.9133,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain": [
+            [
+                -1.5,
+                4
+            ],
+            [
+                -3,
+                4
+            ]
+        ],
         "filepath_r": "functions_no_parameters/mccormick_function.R",
         "filepath_m": "functions_no_parameters/mccormick_function.m"
     },
@@ -290,7 +451,12 @@
         "dimension": "d",
         "minimum_x": null,
         "minimum_f": null,
-        "parameters": true,
+        "parameters": [true, "The default values are for d=4\nvector[d] b (default = [8, 18, 44, 114]"],
+        "input_domain": [
+            [
+                "(0, d)"
+            ]
+        ],
         "filepath_r": "functions_parameters/power_sum_function.R",
         "filepath_m": "functions_parameters/power_sum_function.m"
     },
@@ -298,7 +464,13 @@
         "dimension": "d",
         "minimum_x": 0,
         "minimum_f": 0,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain": [
+            [
+                -5,
+                10
+            ]
+        ],
         "filepath_r": "functions_no_parameters/zakharov_function.R",
         "filepath_m": "functions_no_parameters/zakharov_function.m"
     },
@@ -311,7 +483,13 @@
             ]
         ],
         "minimum_f": 0,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain": [
+            [
+                -5,
+                5
+            ]
+        ],
         "filepath_r": "functions_no_parameters/three-hump_camel_function.R",
         "filepath_m": "functions_no_parameters/three-hump_camel_function.m"
     },
@@ -328,15 +506,31 @@
             ]
         ],
         "minimum_f": -1.0316,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain": [
+            [
+                -3,
+                3
+            ],
+            [
+                -2,
+                2
+            ]
+        ],
         "filepath_r": "functions_no_parameters/six-hump_camel_function.R",
         "filepath_m": "functions_no_parameters/six-hump_camel_function.m"
     },
     "dixon-price_function": {
         "dimension": "d",
-        "minimum_x": "x_i = 2^{(2^i - 2)/2^i}, for i=1,...,d",
+        "minimum_x": "minimum_x = [2**( (-(2**i - 2)) / (2**i) ) for i in range(1,d+1)]",
         "minimum_f": 0,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain": [
+            [
+                -10,
+                10
+            ]
+        ],
         "filepath_r": "functions_no_parameters/dixon-price_function.R",
         "filepath_m": "functions_no_parameters/dixon-price_function.m"
     },
@@ -344,7 +538,13 @@
         "dimension": "d",
         "minimum_x": 1,
         "minimum_f": 0,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain": [
+            [
+                -5,
+                10
+            ]
+        ],
         "filepath_r": "functions_no_parameters/rosenbrock_function.R",
         "filepath_m": "functions_no_parameters/rosenbrock_function.m"
     },
@@ -352,23 +552,40 @@
         "dimension": "2",
         "minimum_x": null,
         "minimum_f": null,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain": [
+            [
+                -65.536,
+                65.536
+            ]
+        ],
         "filepath_r": "functions_no_parameters/de_jong_function_n._5.R",
         "filepath_m": "functions_no_parameters/de_jong_function_n._5.m"
     },
     "easom_function": {
         "dimension": "2",
-        "minimum_x": "pi,pi",
+        "minimum_x": "minimum_x = [math.pi, math.pi]",
         "minimum_f": -1,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain": [
+            [
+                -100,
+                100
+            ]
+        ],
         "filepath_r": "functions_no_parameters/easom_function.R",
         "filepath_m": "functions_no_parameters/easom_function.m"
     },
     "michalewicz_function": {
         "dimension": "d",
-        "minimum_x": "d=2 x = (2.20, 1.57)",
-        "minimum_f": "d=2 f = -1.8013\nd=5 f = -4.687658\nd=10 f = -9.66015",
-        "parameters": true,
+        "minimum_x": "if d==2:\n\tminimum_x = [2.20, 1.57]\nelse:\n\tminimum_x = None",
+        "minimum_f": "if d==2:\n\tminimum_f = -1.8013\nelif d==5:\n\t minimum_f = -4.687658\nelif d==10:\n\t minimum_f = -9.66015\nelse:\n\tminimum_f = None",
+        "parameters": [true, "double m (default = 10)"],
+        "input_domain": [
+            [
+                "(0, math.pi)"
+            ]
+        ],
         "filepath_r": "functions_parameters/michalewicz_function.R",
         "filepath_m": "functions_parameters/michalewicz_function.m"
     },
@@ -381,15 +598,32 @@
             ]
         ],
         "minimum_f": 0,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain": [
+            [
+                -4.5,
+                4.5
+            ]
+        ],
         "filepath_r": "functions_no_parameters/beale_function.R",
         "filepath_m": "functions_no_parameters/beale_function.m"
     },
     "branin_function": {
         "dimension": "2",
-        "minimum_x": "[ [-pi,12.275], [pi,2.275], [9.42478,2.475] ]",
+        "minimum_x": "minimum_x = [ [-(math.pi),12.275], [math.pi,2.275], [9.42478,2.475] ]",
         "minimum_f": 0.397887,
-        "parameters": true,
+        "parameters": [true, "double a (default = 1)\ndouble b (default = 5.1 / (4\\pi**2))\ndouble c (default = 5)\ndouble r (default = 6)\ndouble s (default = 10)\ndouble t (default = 1 / (8\\pi))"],
+        "input_domain":
+        [
+            [
+                -5,
+                10
+            ],
+            [
+                0,
+                15
+            ]
+        ],
         "filepath_r": "functions_parameters/branin_function.R",
         "filepath_m": "functions_parameters/branin_function.m"
     },
@@ -404,7 +638,13 @@
             ]
         ],
         "minimum_f": 0,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain": [
+            [
+                -10,
+                10
+            ]
+        ],
         "filepath_r": "functions_no_parameters/colville_function.R",
         "filepath_m": "functions_no_parameters/colville_function.m"
     },
@@ -412,7 +652,13 @@
         "dimension": "1",
         "minimum_x": null,
         "minimum_f": null,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain": [
+            [
+                0,
+                1
+            ]
+        ],
         "filepath_r": "functions_no_parameters/forrester_et_al._(2008)_function.R",
         "filepath_m": "functions_no_parameters/forrester_et_al._(2008)_function.m"
     },
@@ -425,7 +671,13 @@
             ]
         ],
         "minimum_f": 3,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain": [
+            [
+                -2,
+                2
+            ]
+        ],
         "filepath_r": "functions_no_parameters/goldstein-price_function.R",
         "filepath_m": "functions_no_parameters/goldstein-price_function.m"
     },
@@ -439,7 +691,13 @@
             ]
         ],
         "minimum_f": -3.86278,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain": [
+            [
+                0,
+                1
+            ]
+        ],
         "filepath_r": "functions_no_parameters/hartmann_3-d_function.R",
         "filepath_m": "functions_no_parameters/hartmann_3-d_function.m"
     },
@@ -447,7 +705,13 @@
         "dimension": "4",
         "minimum_x": null,
         "minimum_f": null,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain": [
+            [
+                0,
+                1
+            ]
+        ],
         "filepath_r": "functions_no_parameters/hartmann_4-d_function.R",
         "filepath_m": "functions_no_parameters/hartmann_4-d_function.m"
     },
@@ -464,15 +728,26 @@
             ]
         ],
         "minimum_f": -3.32237,
-        "parameters": false,
+        "parameters": [false],
+        "input_domain": [
+            [
+               0,
+               1 
+            ]
+        ],
         "filepath_r": "functions_no_parameters/hartmann_6-d_function.R",
         "filepath_m": "functions_no_parameters/hartmann_6-d_function.m"
     },
     "perm_function_d,_B": {
         "dimension": "d",
-        "minimum_x": "[ [1,2,...,d] ]",
+        "minimum_x": "minimum_x = [ x for x in range(1,d+1) ]",
         "minimum_f": 0,
-        "parameters": true,
+        "parameters": [true, "double b (default = 0.5)"],
+        "input_domain": [
+            [
+                "(-d, d)"
+            ]
+        ],
         "filepath_r": "functions_parameters/perm_function_d,_B.R",
         "filepath_m": "functions_parameters/perm_function_d,_B.m"
     },
@@ -480,7 +755,13 @@
         "dimension": "d",
         "minimum_x": 0,
         "minimum_f": 0,
-        "parameters": false,
+        "parameters": [false],
+        "powell_function": [
+            [
+                -4,
+                5
+            ]
+        ],
         "filepath_r": "functions_no_parameters/powell_function.R",
         "filepath_m": "functions_no_parameters/powell_function.m"
     },
@@ -494,8 +775,14 @@
                 4
             ]
         ],
-        "minimum_f": "at m=5, f = -10.1532\nat m=7, f = -10.4029\nat m=10 f = -10.5364",
-        "parameters": false,
+        "minimum_f": "minimum_f = -10.5364",
+        "parameters": [false],
+        "input_domain": [
+            [
+                0,
+                10
+            ]
+        ],
         "filepath_r": "functions_no_parameters/shekel_function.R",
         "filepath_m": "functions_no_parameters/shekel_function.m"
     },
@@ -503,7 +790,13 @@
         "dimension": "d",
         "minimum_x": -2.903534,
         "minimum_f": "-39.16599d",
-        "parameters": false,
+        "parameters": [false],
+        "input_domain": [
+            [
+                -5,
+                5
+            ]
+        ],
         "filepath_r": "functions_no_parameters/styblinski-tang_function.R",
         "filepath_m": "functions_no_parameters/styblinski-tang_function.m"
     }
