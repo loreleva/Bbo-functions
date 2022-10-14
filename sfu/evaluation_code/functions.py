@@ -1,4 +1,4 @@
-import json, math, os, sys
+import json, math, os
 from subprocess import check_output
 
 json_functions = None
