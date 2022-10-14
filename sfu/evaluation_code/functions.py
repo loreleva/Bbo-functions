@@ -1,5 +1,5 @@
 import json, math, os, sys
-from subprocess import Popen, PIPE, check_output
+from subprocess import check_output
 
 json_functions = None
 function_name = None
