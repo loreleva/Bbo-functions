@@ -8,13 +8,7 @@ d = None
 class JsonNotLoaded(Exception):
 	pass
 
-class FunctionNotSelected(Exception):
-	pass
-
-class FunctionDoesNotExists(Exception):
-	pass
-
-class FunctionNeedsDimension(Exception):
+class sfuFunctionError(Exception):
 	pass
 
 def load_json(filepath):
@@ -26,7 +20,7 @@ def load_json(filepath):
 
 def select_function(name):
 	if not name in json_functions.keys():
-		raise FunctionDoesNotExists("The function selected does not exists")
+		raise sfuFunctionError("The function selected does not exists")
 	
 	global function_name, function_informations
 	function_name = name
@@ -42,7 +36,7 @@ def functions_names_list():
 def dimension():
 	global function_name, function_informations
 	if not function_name:
-		raise FunctionNotSelected("No function has been selected")
+		raise sfuFunctionError("No function has been selected")
 	
 	try:
 		dimension = int(function_informations["dimension"])
@@ -54,7 +48,7 @@ def minimum_point(dimension=None):
 	# return the point coordinates of the minimum value of the function
 	global function_name, function_informations
 	if not function_name:
-		raise FunctionNotSelected("No function has been selected")
+		raise sfuFunctionError("No function has been selected")
 
 	if type(function_informations["minimum_x"]) == str:
 		local_var = {}
@@ -63,7 +57,7 @@ def minimum_point(dimension=None):
 			return local_var["minimum_x"]
 		else:
 			if not dimension:
-				raise FunctionNeedsDimension("The function needs the dimension value")
+				raise sfuFunctionError("The function needs the dimension value")
 			
 			global d
 			d = dimension
@@ -80,7 +74,7 @@ def minimum_value(dimension=None):
 	# return the global minimum of the function
 	global function_name, function_informations
 	if not function_name:
-		raise FunctionNotSelected("No function has been selected")
+		raise sfuFunctionError("No function has been selected")
 
 	if type(function_informations["minimum_f"]) == str:
 		local_var = {}
@@ -89,7 +83,7 @@ def minimum_value(dimension=None):
 			return local_var["minimum_f"]
 		else:
 			if not dimension:
-				raise FunctionNeedsDimension("The function needs the dimension value")
+				raise sfuFunctionError("The function needs the dimension value")
 
 			global d
 			d = dimension
@@ -105,7 +99,7 @@ def minimum_value(dimension=None):
 def parameters():
 	global function_name, function_informations
 	if not function_name:
-		raise FunctionNotSelected("No function has been selected")
+		raise sfuFunctionError("No function has been selected")
 
 	if not function_informations["parameters"][0]:
 		return "The function does not have parameters"
