@@ -1,4 +1,3 @@
 *.o
 *.a
-/BBComp/bbcomp_software/example
-*/__pycache__/*
+__pycache__
