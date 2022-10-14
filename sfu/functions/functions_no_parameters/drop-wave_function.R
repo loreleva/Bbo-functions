@@ -41,6 +41,3 @@ drop <- function(xx)
   y <- -frac1/frac2
   return(y)
 }
-
-
-
