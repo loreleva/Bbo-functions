@@ -31,7 +31,7 @@ def select_function(name):
 	function_informations = json_functions[name]
 	path_implementation = "../functions/" + json_functions[name]["filepath_r"]
 
-def search_function(filters):
+def search_function(filters=None):
 	global json_functions
 	if not json_functions:
 		raise JsonNotLoaded("The json file has not been loaded")
@@ -39,25 +39,19 @@ def search_function(filters):
 	results = []
 	for function in json_functions:
 		ok = 1
-		for filt in filters:
-			if type(filters[filt]) == bool:
-				temp_value_filter = False
-				if type(json_functions[function][filt]) != bool and json_functions[function][filt] != None:
-					temp_value_filter = True
-				if temp_value_filter != filters[filt]:
+		if filters!=None:
+			for filt in filters:
+				if type(filters[filt]) == bool:
+					temp_value_filter = False
+					if type(json_functions[function][filt]) != bool and json_functions[function][filt] != None:
+						temp_value_filter = True
+					if temp_value_filter != filters[filt]:
+						ok = 0
+				elif json_functions[function][filt] != str(filters[filt]):
 					ok = 0
-			elif json_functions[function][filt] != str(filters[filt]):
-				ok = 0
 		if ok == 1:
 			results.append(function)
 	return results
-
-def functions_names_list():
-	global json_functions
-	if not json_functions:
-		raise JsonNotLoaded("The json file has not been loaded")
-	
-	return [x for x in json_functions]
 
 def dimension():
 	global function_name, function_informations
@@ -213,6 +207,8 @@ def evaluate(inp, param=None):
 	finally:
 		f.close()
 		_delete_last_line()
+	if out.decode().split()[1] == "NaN":
+		return None
 	return float(out.decode().split()[1])
 
 
