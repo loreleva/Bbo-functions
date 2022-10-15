@@ -21,8 +21,8 @@ The `sfu/functions/functions.json` file contains the description of the function
 | `minimum_f`	| float, string, none										| Function's global minimum value.<br />If the value is a string, it contains the python code to compute the optimal function value  |
 | `parameters`	| bool, string												| Description of the parameters of the function if it accepts them, otherwise the value is `false` |
 | `input_domain`| list of list of float, list of list of string				| Range of the input domain. Each inner list represents the range of values for a specific dimension of the function, where usually the function is evaluated.<br />If the dimension is greater than 1 and there is only one inner list, that range is for all the dimensions of the function.<br />If an inner list contains a string, it contains the python code to compute the range |
-| `filepath_r`	| string													| Filepath to the MATLAB implementation of the function |
-| `filepath_m`	| string													| Filepath to the R implementation of the function |
+| `filepath_r`	| string													| Filepath to the R implementation of the function |
+| `filepath_m`	| string													| Filepath to the MATLAB implementation of the function |
 
 # Black Box Optimization Competition
 Collection of functions accumulated over five years of the competition. The functions are written in c++ and are computable only by their released software.  
