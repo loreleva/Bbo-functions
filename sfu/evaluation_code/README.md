@@ -4,12 +4,6 @@ This python module contains the functions necessary to search and evaluate funct
 
 # Modules function description
 
-## List of variables
-- [json_functions](#json_functions)
-- [function_name](#function_name)
-- [function_informations](#function_informations)
-- [path_implementation](#path_implementation)
-
 ## List of functions
 - [load_json()](#json_load)
 - [select_function()](#select_function)
@@ -21,23 +15,11 @@ This python module contains the functions necessary to search and evaluate funct
 - [input_domain()](#input_domain)
 - [evaluate()](#evaluate)
 
-## Variables
-<a name="json_functions"></a>
-### `json_functions`
-Contains the object that is inside the json file, loaded with [`load_json()`](#load_json).
-
-<a name="function_name"></a>
-### `function_name`
-Contains the name function string selected with [`select_function()`](#select_function).
-
-<a name="function_informations"></a>
-### `function_informations`
-Contains a dictionary with the information fields as keys, of the function selected with [`select_function()`](#select_function).
-
-<a name="path_implementation"></a>
-### `path_implementation`
-Contains the string of the file path of the R implementation of the function selected with [`select_function()`](#select_function).
-
+## List of variables
+- [json_functions](#json_functions)
+- [function_name](#function_name)
+- [function_informations](#function_informations)
+- [path_implementation](#path_implementation)
 
 ## Functions
 
@@ -85,3 +67,21 @@ The `dim` argument is passed when the selected function has dimension `d`.
 Returns the selected function value at point `inp`, which is a float value or a list of floats.  
 The `param` dictionary is a dictionary of selected function's parameters.  
 Returns `None` if there has been an error on the function computation.
+
+## Variables
+
+<a name="json_functions"></a>
+### `json_functions`
+Contains the object that is inside the json file, loaded with [`load_json()`](#load_json).
+
+<a name="function_name"></a>
+### `function_name`
+Contains the name selected function.
+
+<a name="function_informations"></a>
+### `function_informations`
+Contains a dictionary with the information fields as keys, of the selected function.
+
+<a name="path_implementation"></a>
+### `path_implementation`
+Contains the string of the file path of the R implementation of the selected function.
