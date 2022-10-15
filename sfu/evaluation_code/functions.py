@@ -174,7 +174,6 @@ def input_domain(dim=None):
 
 def evaluate(inp, param=None):
 	# evaluate the function implementation in R
-
 	global function_name, path_implementation
 	function_dimension = dimension()
 	if not function_name:
@@ -184,6 +183,8 @@ def evaluate(inp, param=None):
 	if function_dimension != "d" and function_dimension != 1 and len(inp) != function_dimension:
 		raise sfuFunctionError("Function input does not match function dimension")
 	
+	if type(inp) != list:
+		inp = [inp]
 	with open(path_implementation, "r") as f:
 		call = "\n" + f.readline().split()[0]
 		if function_dimension == 1:
@@ -211,11 +212,11 @@ def evaluate(inp, param=None):
 		return None
 	finally:
 		f.close()
-		delete_last_line()
-	print(out.decode().split()[1])
+		_delete_last_line()
+	return float(out.decode().split()[1])
 
 
-def delete_last_line():
+def _delete_last_line():
 	global path_implementation
 	with open(path_implementation, "r+") as f:
 		f.seek(0, os.SEEK_END)
