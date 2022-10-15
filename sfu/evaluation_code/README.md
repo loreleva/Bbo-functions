@@ -82,6 +82,6 @@ The `dim` argument is passed when the selected function has dimension `d`.
 
 <a name="evaluate"></a>
 ### `evaluate(inp, param=None)`
-Returns the selected function value at point `inp`, which is a float value of a list of floats.  
+Returns the selected function value at point `inp`, which is a float value or a list of floats.  
 The `param` dictionary is a dictionary of selected function's parameters.  
 Returns `None` if there has been an error on the function computation.
