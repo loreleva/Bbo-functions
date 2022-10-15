@@ -24,7 +24,7 @@ This python module contains the functions necessary to search and evaluate funct
 ## Variables
 <a name="json_functions"></a>
 ### `json_functions`
-Contains the object that is inside the json file, loaded with [`load_json()`](#load_json()).
+Contains the object that is inside the json file, loaded with [`load_json()`](#load_json).
 
 <a name="function_name"></a>
 ### `function_name`
@@ -45,7 +45,7 @@ Contains the string of the file path of the R implementation of the function sel
 ### `load_json(filepath)`
 Load the json object at `filepath` and returns it.
 
-<a name="select_function()"></a>
+<a name="select_function"></a>
 ### `select_function(name)`
 Prepare the module to evaluate the function named `name`.  
 The function `name` will be referred through the rest of this documentation as "selected function".
