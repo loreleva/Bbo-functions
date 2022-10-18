@@ -29,7 +29,7 @@ def select_function(name):
 	global function_name, function_informations, path_implementation
 	function_name = name
 	function_informations = json_functions[name]
-	path_implementation = "../functions/" + json_functions[name]["filepath_r"]
+	path_implementation = os.path.join(os.path.dirname(os.path.dirname(__file__)), "functions/") + json_functions[name]["filepath_r"]
 
 def search_function(filters=None):
 	global json_functions
