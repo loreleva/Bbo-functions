@@ -1,5 +1,6 @@
 import json, math, os
 from subprocess import check_output
+import shutil
 
 json_functions = None
 function_name = None
@@ -179,7 +180,9 @@ def evaluate(inp, param=None):
 	
 	if type(inp) != list:
 		inp = [inp]
-	with open(path_implementation, "r") as f:
+	path_copy_implementation = path_implementation[:-2] + "_eval.R"
+	shutil.copyfile(path_implementation, path_copy_implementation)
+	with open(path_copy_implementation, "r") as f:
 		call = "\n" + f.readline().split()[0]
 		if function_dimension == 1:
 			call = call + "({}".format(inp)
@@ -194,35 +197,18 @@ def evaluate(inp, param=None):
 		f.close()
 
 
-	with open(path_implementation, "a") as f:
+	with open(path_copy_implementation, "a") as f:
 		f.write(call)
-		f.close()
 
 	try:
-		cmd = ["Rscript", path_implementation]
+		cmd = ["Rscript", path_copy_implementation]
 		out = check_output(cmd)
 	except:
 		print("Error in the function execution occurred")
 		return None
 	finally:
 		f.close()
-		_delete_last_line()
+		os.remove(path_copy_implementation)
 	if out.decode().split()[1] == "NaN":
 		return None
 	return float(out.decode().split()[1])
-
-
-def _delete_last_line():
-	global path_implementation
-	with open(path_implementation, "r+") as f:
-		f.seek(0, os.SEEK_END)
-		pos = f.tell() - 1
-
-		while pos > 0 and f.read(1) != "\n":
-			pos -= 1
-			f.seek(pos, os.SEEK_SET)
-
-		if pos > 0:
-			f.seek(pos, os.SEEK_SET)
-			f.truncate()
-		f.close()
