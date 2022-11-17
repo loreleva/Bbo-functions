@@ -177,15 +177,16 @@ def evaluate(inp, param=None):
 		raise sfuFunctionError("Function input must be int or float")
 	if function_dimension != "d" and function_dimension != 1 and len(inp) != function_dimension:
 		raise sfuFunctionError("Function input does not match function dimension")
-	
 	if type(inp) != list:
 		inp = [inp]
+	if function_dimension == "d":
+		function_dimension = len(inp)
 	path_copy_implementation = path_implementation[:-2] + "_eval.R"
 	shutil.copyfile(path_implementation, path_copy_implementation)
 	with open(path_copy_implementation, "r") as f:
 		call = "\n" + f.readline().split()[0]
 		if function_dimension == 1:
-			call = call + "({}".format(inp)
+			call = call + "({}".format(inp[0])
 		else:
 			inp = [str(x) for x in inp]
 			call = call + "(c(" + ",".join(tuple(inp)) + ")"
@@ -193,7 +194,6 @@ def evaluate(inp, param=None):
 			for par in param:
 				call = call + ",{}={}".format(par, param[par])
 		call = call + ")"
-
 		f.close()
 
 
@@ -209,6 +209,6 @@ def evaluate(inp, param=None):
 	finally:
 		f.close()
 		os.remove(path_copy_implementation)
-	if out.decode().split()[1] == "NaN":
+	if out.decode().split()[1] == "NA":
 		return None
 	return float(out.decode().split()[1])
