@@ -2,7 +2,7 @@ import sys, time
 from functions import *
 
 if __name__ == "__main__":
-	print(f"Result search: {search_function({'minimum_f' : True})}")
+	print(f"Result search: {search_function({'minimum_f' : True, 'dimension' : 'd'})}")
 	#print("Functions with dimension d:{}\n".format(search_function({"dimension" : "d"})))
 	#function_selected = "trid_function"
 	#function_dimension = 5
