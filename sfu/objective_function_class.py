@@ -10,31 +10,22 @@ class sfuFunctionError(Exception):
 # Define path of JSON functions data
 json_filepath = os.path.join("functions_dataset", "functions_data.json")
 
-def get_json_functions() -> dict:
+def get_json_functions(name=None) -> dict:
 	"""
-	Returns the dictionary of all the functions inside the functions' json
+	Returns the dictionary of all the functions inside the functions' json or of just the function "name"
 	"""
 	global json_filepath
 	f = open(json_filepath)
 	json_functions = json.load(f)
 	f.close()
+	if name != None:
+		try:
+			json_functions = json_functions[name]
+		except KeyError:
+			raise sfuFunctionError(f"The selected function does not exists: \"{name}\"")
 	return json_functions
 
-def get_json_function(name) -> dict:
-	"""
-	Returns the dictionary of the selected function inside the functions' json
-	"""
-	global json_filepath
-	f = open(json_filepath)
-	json_functions = json.load(f)
-	f.close()
-	try:
-		res_json = json_functions[name]
-	except KeyError:
-		raise sfuFunctionError(f"The selected function does not exists: \"{name}\"")
-	return res_json
-
-def search_function(filters=None) -> list:
+def search_functions(filters=None) -> list:
 	"""
 	Search a function in the given json
 
@@ -71,7 +62,7 @@ def search_function(filters=None) -> list:
 class objective_function():
 	"""Objective function's class
 	
-	Parameters
+	Attributes
 	----------
 	name: str
 		Name of the objective function
@@ -97,10 +88,10 @@ class objective_function():
 		Tuple with parameter name at idx 0, and dict of values for which opt is defined at idx 1.
 	opt: float, None
 		Function's global optimum
-	implementation_name: function
+	implementation: function
 		Implementation of the objective function
 
-	Functions
+	Methods
 	---------
 	evaluate(inp): evaluate objective function on "inp" input values.
 	update_parameters(parameters): update parameters of the objective function
