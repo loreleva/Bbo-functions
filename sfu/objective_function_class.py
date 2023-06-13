@@ -1,4 +1,4 @@
-import os, json
+import os, json, math
 import functions_dataset.functions as functions_implementation
 
 class JsonNotLoaded(Exception):
